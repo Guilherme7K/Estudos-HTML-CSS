@@ -1,0 +1,53 @@
+capitulo 5:
+
+HTML é baseado em marcações chamadas Tags, e elas comandam todo o codigo
+
+HTML não é uma linguagem de programação porque ela não apresenta estruturas que 
+uma linguagem de programação tem como: variaveis, condições, laços, objetos e etc.
+
+HTML: Conteúdo
+CSS: Estilo
+JavaScript: Interatividade
+
+Tag: <p> serve para pargrafo e a tag: <br> para quebrar linha
+
+se quiser usar os sibomolos: < e > devemos utilizar os comandos &lt para menor e &gt para maior
+
+para mais codigos de comandos como esse consulte a tabela chamada HTML entities.
+
+adição de emojis é feita utilizando o unicode
+do emoji desejado utilizando a tag: &#x e em seguida o codigo do emoji
+
+USO DE IMAGENS: 
+
+cuidado com direito autorais em fotos, opte por fotos publicas com uso liberado
+ou fotos autorais.
+
+opte sempre pelo formato JPEG com uma compactação etre 30% e 50%.
+Pois isso ajudara a deixar o site mais leve. Caso precise de um fundo transparente utilize o formato PNG
+
+use imagens do tamanho ideal do que vai ser utilizado. Nada de ficar salvando imagens grandes e
+ficar diminuindo com códigos. Uma imagem de 3MB não vai ficar mais leve se por acaso mudar a largura
+dela no CSS, isso vai fazer o navegador levar um grande tempo para carregar o arquivo do seu servidor
+
+Mecanismos de busca como o Google penalizam sites lentos. isso prejudica o seu site
+
+Favicon é o logo que aparece do lado do titulo do site 
+Utilize o formato ICO e PNG. pois é mais compativel com a maioria dos navegadores
+
+tag <q>: serve para usar aspas mas como no sentido de citações simples
+
+tag <blackquote>: para citações mais completas, exemplo um trecho de um livro
+pode ser usar o parametro "cite" para adicionar citações utilizando um link por exemplo, ou outro tipo de fonte
+
+tag <bdo dir = "">: serve para inverter algum texto. usando os parametros: rtl/ ltr
+
+
+Adaptação de imagens em diferentes telas. a sequencia do source é sempre começando pelo menor
+e assim vai aumentando de forma crescente. Por ultimo a foto original, que sera a maior dimensão:
+
+<picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
